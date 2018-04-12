@@ -1,0 +1,74 @@
+* {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  canvas {
+      width: 100%;
+      height: 100vh;
+  }
+  .container {
+    width: 100%;
+    background: url('umbrella.jpg') no-repeat;
+    background-size: cover;
+    height: 100vh;
+  }
+  #sky {
+    /* position: relative; */
+  }
+  .saludo {
+    width: 100%;
+    position: absolute;
+    top: 24%;
+    left: 0;
+  }
+  h1 {
+    font-size: 6rem;
+  }
+  h3 {
+    font-size: 3.5rem;
+  }
+  h1, h3 {
+    text-align: center;
+    color: rgb(250, 220, 49);
+  }
+  .duck {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+  }
+  .text {
+      position: absolute;
+      bottom: 5%;
+      right: 10%;
+      width: 300px;
+  }
+  .text p {
+      color: #ffffff;
+      font-size: .89rem;
+      text-align: center;
+  }
+  @media (max-width: 600px) {
+      .container {
+        background-size: cover;
+        background-position: inherit;
+     }
+     .saludo {
+       top:21%;
+     }
+     
+    .duck {
+        display: none;
+    }
+    .text {
+      right: 21px;
+    }
+     h1 {
+        font-size: 2.5rem;
+        margin-top: 2rem;
+      }
+    h3 {
+      font-size: 2rem;
+    } 
+  }
